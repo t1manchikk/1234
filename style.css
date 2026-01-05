@@ -1,0 +1,61 @@
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#e6fbff;
+text-align:center;
+}
+header{
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+font-weight:bold;
+color:#1b6b73;
+}
+.burger-main{
+width:180px;
+margin:30px auto;
+}
+.title{
+font-size:22px;
+font-weight:bold;
+color:#1b6b73;
+}
+.arrow{
+font-size:32px;
+margin:10px 0;
+}
+.start-btn{
+padding:12px 25px;
+font-size:16px;
+background:#6fbf73;
+border:3px solid #e79c9c;
+border-radius:8px;
+cursor:pointer;
+}
+.quiz,.result{display:none;}
+.modal{
+background:#eef9fb;
+width:320px;
+margin:100px auto;
+padding:20px;
+border-radius:10px;
+}
+.answers{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+margin:20px 0;
+}
+.answer{
+width:90px;
+padding:10px;
+background:white;
+border-radius:8px;
+cursor:pointer;
+border:2px solid transparent;
+}
+.answer.selected{
+border-color:#1b6b73;
+}

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Burger Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="left">🍔 BURGER-QUIZ</div>
+  <div class="right">GLO Academy</div>
+</header>
+
+<section class="start" id="start">
+  <img src="images/burger_main.png" class="burger-main">
+  <p class="title">Пройди тест и собери<br>бургер своей мечты</p>
+  <div class="arrow">⬇</div>
+  <button class="start-btn" onclick="startQuiz()">Пройди тест и получи результат</button>
+</section>
+
+<section class="quiz" id="quiz">
+  <div class="modal">
+    <h3 id="question"></h3>
+    <div class="answers" id="answers"></div>
+    <div class="nav">
+      <button onclick="next()">Next</button>
+    </div>
+  </div>
+</section>
+
+<section class="result" id="result">
+  <h2>Твой бургер готов 🍔</h2>
+  <img src="images/burger_main.png">
+  <ul id="resultList"></ul>
+  <button onclick="location.reload()">Пройти снова</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
